@@ -1,0 +1,31 @@
+
+package cst250lab05;
+
+public class MainClass {
+    
+    public static void main(String[] args){
+        System.out.println(isPalindrome("aba"));
+        System.out.println(isPalindrome("omar"));
+        System.out.println(isPalindrome("alvarado"));
+        System.out.println(isPalindrome("lalo"));
+        System.out.println(isPalindrome("2349432"));
+        System.out.println(isPalindrome("mkasndfjha"));
+    }
+    
+    public static boolean isPalindrome(String word){
+        
+        int i = 0;
+        int j = word.length() -1;
+        
+        while(j > i){
+            if (word.charAt(i) != word.charAt(j)){
+                return false;
+            }
+            i = i + 1;
+            j = j - 1;
+            
+        }
+       
+        return true;
+    }
+}
